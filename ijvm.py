@@ -1,11 +1,7 @@
 import re
 
-from pygments.lexer import RegexLexer, include, bygroups, default, using, \
-    this, words, combined
-from pygments.token import Text, Comment, Operator, Keyword, Name, String, \
-    Number, Punctuation, Other
-from pygments.util import get_bool_opt
-import pygments.unistring as uni
+from pygments.lexer import RegexLexer, include
+from pygments.token import Text, Comment, Operator, Keyword, Name, Number, Punctuation
 
 __all__ = ['IJVMLexer']
 
