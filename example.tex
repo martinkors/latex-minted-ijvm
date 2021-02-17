@@ -1,0 +1,18 @@
+\documentclass{article}
+\usepackage{minted}
+\usemintedstyle{colorful}
+\begin{document}
+  \begin{minted}{ijvm.py:IJVMLexer -x}
+.method main // The main method
+.args 2
+.locals 1
+.define x = 1
+.define y = 2
+    iload x
+    iload 5
+    iadd // x + 5
+    istore y
+    iload y
+    ireturn
+  \end{minted}
+\end{document}
