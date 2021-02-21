@@ -11,7 +11,7 @@ class IJVMLexer(RegexLexer):
   filenames = ['*.j']
   flags = re.IGNORECASE | re.MULTILINE
 
-  decn = r'[0-9]+'
+  decn = r'[0-9]+|0x[0-9a-fA-F]+'
   operators = r'(?:=|\+|\-)'
   identifier = r'[a-z$._?][\w$.?#@~]*'
   directives = (r'(?:\.method|\.args|\.locals|\.define)\s+')
