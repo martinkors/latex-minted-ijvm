@@ -15,7 +15,7 @@ class IJVMLexer(RegexLexer):
   operators = r'(?:=|\+|\-)'
   identifier = r'[a-z$._?][\w$.?#@~]*'
   directives = (r'(?:\.method|\.args|\.locals|\.define)\s+')
-  ukeywords = (r'(?:dup|iadd|iand|ior|ireturn|isub|nop|pop|swap)')
+  ukeywords = (r'(?:dup|iadd|iand|ior|ireturn|isub|nop|pop|swap|isuadd)')
   keywords = (r'(?:bipush|goto|ifeq|iflt|if_icmpeq|iinc|iload|invokevirtual|istore|ldc_w)\s+')
 
   tokens = {
